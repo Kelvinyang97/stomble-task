@@ -10,8 +10,6 @@ const mapStateToProps = state => {
 const mapDispatchToProps = (dispatch) => {
     return {
         onNewItemAdd: (value) =>{
-            console.log('whatis dispatched?')
-            console.log(value)
             dispatch(addTodo(value))
         }
     }
