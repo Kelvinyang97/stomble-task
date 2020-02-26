@@ -7,6 +7,14 @@ const mapStateToProps = state => {
     }
  }
   
+//if use redux-saga, then need to use an action creator instead of just this dispatch
+///something like this will be used instead
+// mapping dispatch functions to the props of LoginForm component
+// const mapDispatchToProps = (dispatch) => {
+//     return bindActionCreators({
+//       ...
+//     }, dispatch);
+//   }
 const mapDispatchToProps = (dispatch) => {
     return {
         onNewItemAdd: (value) =>{
